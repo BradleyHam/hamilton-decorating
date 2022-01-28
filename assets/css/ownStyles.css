@@ -1,0 +1,76 @@
+
+.painterImage{
+    height: 500px;
+  }
+  .painterImageContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+  }
+.feature-color{
+    color: var(--feature)!important;
+}
+.logo{
+    font-family: 'Playfair Display'!important;
+    font-size: 17px!important;
+    
+}
+.logo img{
+  transform: scale(1.4);
+  padding-left: 15px;
+}
+.custom-button{
+  
+  color: var(--feature);
+  border: 1px solid var(--feature);
+}
+
+.service-img{
+  height: 300px;
+  width: 100%;
+}
+.hamilton-leftCircle{
+  width: 200px;
+  padding-bottom: 20px;
+  margin-top: -15px;
+
+}
+.logo img{
+  margin-left: 12px;
+}
+
+.bottom-header{
+  padding: 20px 12px;
+}
+.bottom-header img{
+  transform: scale(1.2);
+  margin-left: 0;
+
+}
+/* ----------  header contact  */
+.header-phone{
+  align-items: center;
+  background: rgb(0, 0, 0)!important;
+}
+.header-phone .container{
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.144); */
+  padding: 1px 12px;
+  color: white;
+}
+.header-phone{
+  background:   var(--secondary);
+  
+}
+.header-phone i{
+  padding-right: 10px;
+  color: white;
+ 
+}
+.phone-number{
+  opacity: 1;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+}
+/* ------- navbar mobile  */
+
