@@ -1,7 +1,16 @@
 
 .painterImage{
     height: 500px;
+    transform: scale(1);
+    margin-top: -80px;
   }
+  @media(min-width: 992px){
+    .painterImage{
+      margin-top: 0;
+      transform: scale(1.4);
+    }
+  }
+
   .painterImageContainer{
     display: flex;
     justify-content: center;
@@ -50,7 +59,7 @@
 /* ----------  header contact  */
 .header-phone{
   align-items: center;
-  background: rgb(0, 0, 0)!important;
+  background:  white!important;
 }
 .header-phone .container{
   /* border-bottom: 1px solid rgba(0, 0, 0, 0.144); */
@@ -58,19 +67,29 @@
   color: white;
 }
 .header-phone{
-  background:   var(--secondary);
+ 
+
   
 }
 .header-phone i{
   padding-right: 10px;
-  color: white;
+  color: black;
  
 }
 .phone-number{
   opacity: 1;
   font-size: 16px;
   font-weight: 300;
-  color: white;
+  color: black;
 }
-/* ------- navbar mobile  */
 
+
+.call{
+  font-style: italic!important;
+  color: var(--feature);
+  font-weight: bold;
+}
+
+.contact-breadcrumbs{
+  margin-top: 110px;
+}
