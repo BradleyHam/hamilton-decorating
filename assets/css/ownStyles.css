@@ -29,9 +29,12 @@
   padding-left: 15px;
 }
 .custom-button{
-  
   color: var(--feature);
   border: 1px solid var(--feature);
+}
+.custom-button:hover{
+  color: white;
+  background: var(--feature);
 }
 
 .service-img{
@@ -93,3 +96,54 @@
 .contact-breadcrumbs{
   margin-top: 110px;
 }
+
+.subscribe{
+  background: var(--feature)!important;
+}
+
+/* ------------  */
+
+#modal{
+  display: block;
+  position: fixed;
+  top: 50%;
+  left:50%;
+  /* height: 80vh; */
+  width: 50vw;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 100000;
+  background: white;
+  outline: 1000px solid rgba(0, 0, 0, 0.76);
+  padding: 50px;
+  
+}
+.modal-btn{
+  margin-left: 22px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: var(--feature);
+  /* border: 2px solid var(--feature); */
+  border-radius: 50px;
+  padding: 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+  box-shadow: 5px 5px 10px rgba(0,0,0,.2);
+  border: none;
+  margin-top: 20px;
+}
+
+.close-FQ{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.FQ{
+  cursor: pointer;
+}
+

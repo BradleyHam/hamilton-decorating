@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #7ed899;
+
   color: #fff;
 }
 .back-to-top.active {
@@ -169,6 +169,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   box-shadow: 5px 5px 10px rgba(0,0,0,.2);
   display: none;
+  cursor: pointer;
 
 }
 .get-started-btn:hover {
@@ -529,16 +530,20 @@ section {
  
 }
 .breadcrumbs {
-  margin-top: 82.5px;
+  margin-top: 112px;
   text-align: center;
   background: var(--primary);
   padding: 30px 0;
   color: #fff;
 }
-@media (max-width: 992px) {
+@media (min-width: 992px) {
   .breadcrumbs {
     margin-top: 63px;
   }
+  .gallery-breadcrumbs{
+    margin-top: 83px;
+  }
+ 
 }
 .breadcrumbs h2 {
   font-size: 32px;
@@ -638,7 +643,7 @@ section {
 }
 .why-us .content .more-btn {
   display: inline-block;
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--feature);
   padding: 6px 30px 8px 30px;
   color: #fff;
   border-radius: 50px;
@@ -648,8 +653,7 @@ section {
   font-size: 14px;
 }
 .why-us .content .more-btn:hover {
-  color: var(--primary);
-  background: #fff;
+  transform: scale(1.1);
 }
 .why-us .icon-boxes .icon-box {
   text-align: center;
@@ -714,60 +718,60 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Courses
+# services
 --------------------------------------------------------------*/
 
-.courses .course-item {
+.services .service-item {
   border-radius: 5px;
   background-color: white;
   color: var(--primary);
 }
-.courses .course-content {
+.services .service-content {
   padding: 15px;
 }
-.courses .course-content h3 {
+.services .service-content h3 {
   font-weight: 700;
   font-size: 20px;
 }
-.courses .course-content h3 a {
+.services .service-content h3 a {
  color: var(--primary);
   transition: 0.3s;
 }
-.courses .course-content h3 a:hover {
+.services .service-content h3 a:hover {
   color: var(--primary);
 }
-.courses .course-content p {
+.services .service-content p {
   font-size: 14px;
   color: #777777;
 }
-.courses .course-content h4 {
+.services .service-content h4 {
   font-size: 14px;
   background: var(--primary);
   padding: 7px 14px;
   color: #fff;
   margin: 0;
 }
-.courses .course-content .price {
+.services .service-content .price {
   margin: 0;
   font-weight: 700;
   font-size: 18px;
   color: #37423b;
 }
-.courses .trainer {
+.services .trainer {
   padding-top: 15px;
   border-top: 1px solid #eef0ef;
 }
-.courses .trainer .trainer-profile img {
+.services .trainer .trainer-profile img {
   max-width: 50px;
   border-radius: 50px;
 }
-.courses .trainer .trainer-profile span {
+.services .trainer .trainer-profile span {
   padding-left: 10px;
   font-weight: 600;
   font-size: 16px;
   color: #5a6c60;
 }
-.courses .trainer .trainer-rank {
+.services .trainer .trainer-rank {
   font-size: 18px;
   color: #657a6d;
 }
@@ -910,14 +914,14 @@ section {
 /*--------------------------------------------------------------
 # Cource Details
 --------------------------------------------------------------*/
-.course-details h3 {
+.service-details h3 {
   font-size: 24px;
   margin: 30px 0 15px 0;
   font-weight: 700;
   position: relative;
   padding-bottom: 10px;
 }
-.course-details h3:before {
+.service-details h3:before {
   content: "";
   position: absolute;
   display: block;
@@ -927,7 +931,7 @@ section {
   bottom: 0;
   left: 0;
 }
-.course-details h3:after {
+.service-details h3:after {
   content: "";
   position: absolute;
   display: block;
@@ -937,22 +941,22 @@ section {
   bottom: 0;
   left: 0;
 }
-.course-details .course-info {
+.service-details .service-info {
   background: #f6f7f6;
   padding: 10px 15px;
   margin-bottom: 15px;
 }
-.course-details .course-info h5 {
+.service-details .service-info h5 {
   font-weight: 400;
   font-size: 16px;
   margin: 0;
   font-family: "Lato", sans-serif;
 }
-.course-details .course-info p {
+.service-details .service-info p {
   margin: 0;
   font-weight: 600;
 }
-.course-details .course-info a {
+.service-details .service-info a {
   color: #657a6d;
 }
 
@@ -1148,9 +1152,7 @@ section {
   font-weight: 600;
   transition: 0.3s;
 }
-.pricing .btn-buy:hover {
-  background: #3ac162;
-}
+
 .pricing .featured h3 {
   color: #fff;
   background: var(--primary);
@@ -1211,14 +1213,14 @@ section {
   background: var(--primary);
   color: #fff;
 }
-.contact .php-email-form {
+.contact .contact-form {
   width: 100%;
   background: var(--secondary);
 }
-.contact .php-email-form .form-group {
+.contact .contact-form .form-group {
   padding-bottom: 8px;
 }
-.contact .php-email-form .error-message {
+.contact .contact-form .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -1226,10 +1228,10 @@ section {
   padding: 15px;
   font-weight: 600;
 }
-.contact .php-email-form .error-message br + br {
+.contact .contact-form .error-message br + br {
   margin-top: 25px;
 }
-.contact .php-email-form .sent-message {
+.contact .contact-form .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -1237,13 +1239,13 @@ section {
   padding: 15px;
   font-weight: 600;
 }
-.contact .php-email-form .loading {
+.contact .contact-form .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
-.contact .php-email-form .loading:before {
+.contact .contact-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1255,30 +1257,30 @@ section {
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
-.contact .php-email-form input, .contact .php-email-form textarea {
+.contact .contact-form input, .contact .contact-form textarea {
   border-radius: 4px;
   box-shadow: none;
   font-size: 14px;
 }
-.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+.contact .contact-form input:focus, .contact .contact-form textarea:focus {
   border-color: var(--primary);
 }
-.contact .php-email-form input {
+.contact .contact-form input {
   height: 44px;
 }
-.contact .php-email-form textarea {
+.contact .contact-form textarea {
   padding: 10px 12px;
 }
-.contact .php-email-form button[type=submit] {
-  background: var(--primary);
+.contact .contact-form button[type=submit] {
+  background: var(--feature);
   border: 0;
   padding: 10px 35px;
   color: #fff;
   transition: 0.4s;
   border-radius: 50px;
 }
-.contact .php-email-form button[type=submit]:hover {
-  background: #3ac162;
+.contact .contact-form button[type=submit]:hover {
+  transform: scale(1.1);
 }
 @-webkit-keyframes animate-loading {
   0% {
@@ -1303,11 +1305,11 @@ section {
 #footer {
   color: #37423b;
   font-size: 14px;
-  background: #eef0ef;
+  background: var(--secondary);
 }
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #f9faf9;
+  background: white;
 }
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
@@ -1405,16 +1407,13 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 #footer .footer-newsletter form input[type=submit]:hover {
-  background: #3ac162;
+
 }
 #footer .credits {
   padding-top: 5px;
   font-size: 13px;
 }
-#footer .credits a {
-  color: #3ac162;
-  transition: 0.3s;
-}
+
 #footer .credits a:hover {
   color: var(--primary);
 }
@@ -1433,7 +1432,7 @@ section {
   transition: 0.3s;
 }
 #footer .social-links a:hover {
-  background: #3ac162;
+
   color: #fff;
   text-decoration: none;
 }
