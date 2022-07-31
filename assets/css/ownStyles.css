@@ -1,4 +1,13 @@
+strong{
+  font-weight: 600;
+  color: #2e2e2e;
+}
+#product-description{
+ margin-top: 20px;
+  font-size: 18px!important;
+  width: 85%;
 
+}
 .painterImage{
     height: 500px;
     transform: scale(1);
@@ -8,6 +17,7 @@
     .painterImage{
       margin-top: -20px;
       transform: scale(1.4);
+     
     }
   }
 
