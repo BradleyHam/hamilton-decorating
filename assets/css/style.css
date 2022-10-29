@@ -13,17 +13,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300,600,700&display=swap');
 
 :root{
+
+
   --primary: #000;
   --secondary: #d3d2d2;
   --tertiary: #141936;
-
-   --feature: #a8936e; 
+  --feature: #a8936e; 
 }
 
 body {
   background: var(--secondary);
   font-family: "SourceSansPro", sans-serif;
   font-weight: 300;
+ 
   color: #444444;
   font-size: 17px;
  

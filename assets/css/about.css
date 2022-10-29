@@ -1,13 +1,7 @@
 section{
-    display: flex;
     margin: 0 52px;
 }
-section img:last-child{
-    width: 50%;
-}
-section p:first-child{
-    margin-right: 52px;
-}
+
 .about-p{
     line-height: 1.6;
     font-size: 19px;
